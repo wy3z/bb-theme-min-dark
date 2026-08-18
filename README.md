@@ -4,15 +4,15 @@ A minimal dark theme for [BB](https://getbb.app), based on the **Min Dark (Solid
 
 ## Palette
 
-- Main panel: `#141414` at 90% opacity
-- Sidebar: `#141414`
+- Main panel: solid `#141414`
+- Project sidebar: `#141414` at 90% opacity
 - Raised messages and code: `#242424`–`#333333`
 - Border and selection: `#2A2A2A`
 - Foreground: `#BBBBBB`
 - Muted text: `#999999`
 - Accent: `#79B8FF`
 
-The repository also includes a matching Pierre/VS Code code theme for diffs and file previews. The thread surface uses 90% opacity; showing the desktop wallpaper beneath it requires a BB desktop build with native transparent-window support.
+The repository also includes a matching Pierre/VS Code code theme for diffs and file previews. The project sidebar uses 90% opacity; showing the desktop wallpaper beneath it requires a BB desktop build with native transparent-window support.
 
 ## Install
 

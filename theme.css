@@ -49,10 +49,10 @@
   --primary: #79b8ff;
   --primary-foreground: #141414;
 
-  --background: rgb(20 20 20 / 90%);
-  --card: rgb(20 20 20 / 90%);
+  --background: #141414;
+  --card: #141414;
   --popover: #1a1a1a;
-  --sidebar: #141414;
+  --sidebar: rgb(20 20 20 / 90%);
   --sidebar-foreground: #999999;
   --sidebar-accent: #2a2a2a;
   --sidebar-border: #2a2a2a;

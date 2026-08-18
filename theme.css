@@ -134,3 +134,13 @@
 .dark [data-sidebar="sidebar"] {
   background-color: transparent !important;
 }
+
+.dark [data-sidebar="sidebar"] .group\/sidebar-section > .bb-sidebar-hover-actions-row,
+.dark [data-sidebar="sidebar"] .group\/sidebar-section > .bb-sidebar-hover-actions-row::before,
+.dark [data-sidebar="sidebar"] .group\/sidebar-section > .bb-sidebar-hover-actions-row::after {
+  background-color: transparent !important;
+}
+
+.dark [data-sidebar="sidebar"] .bg-gradient-to-b.from-transparent.to-sidebar {
+  background-image: none !important;
+}

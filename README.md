@@ -23,4 +23,4 @@ cp theme.css theme.json pierre-dark.json "$(bb theme dir)/min-dark/"
 bb theme set min-dark
 ```
 
-The stylesheet uses Inter for the interface and JetBrains Mono for code when those fonts are available.
+The stylesheet uses BB's bundled Inter Variable for the interface and JetBrains Mono for code when available.

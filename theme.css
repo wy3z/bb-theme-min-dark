@@ -152,3 +152,7 @@
 .dark .sticky.top-0.z-10.bg-sidebar > .bg-surface-raised {
   background-color: #202020 !important;
 }
+
+.dark img[src*="/api/v1/plugin-catalog/icons/bb-community/"] {
+  filter: invert(60%);
+}

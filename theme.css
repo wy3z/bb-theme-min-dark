@@ -144,3 +144,8 @@
 .dark [data-sidebar="sidebar"] .bg-gradient-to-b.from-transparent.to-sidebar {
   background-image: none !important;
 }
+
+.dark .group\/tab-pill.bg-state-active,
+.dark .sticky.top-0.z-10.bg-sidebar > .bg-surface-raised {
+  background-color: #1a1a1a !important;
+}

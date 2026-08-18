@@ -52,7 +52,7 @@
   --background: #141414;
   --card: #141414;
   --popover: #1a1a1a;
-  --sidebar: rgb(20 20 20 / 90%);
+  --sidebar: #141414;
   --sidebar-foreground: #999999;
   --sidebar-accent: #2a2a2a;
   --sidebar-border: #2a2a2a;
@@ -124,5 +124,13 @@
 .dark,
 .dark body,
 .dark body #root {
+  background-color: transparent !important;
+}
+
+.dark [data-sidebar="panel"] {
+  background-color: rgb(20 20 20 / 90%) !important;
+}
+
+.dark [data-sidebar="sidebar"] {
   background-color: transparent !important;
 }

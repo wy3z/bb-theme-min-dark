@@ -1,4 +1,6 @@
 :root, .light {
+  font-size: 17px;
+
   --canvas: #ffffff;
   --ink: #212121;
   --primary: #1976d2;

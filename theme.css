@@ -145,10 +145,7 @@
   background-image: none !important;
 }
 
-.dark .group\/tab-pill.bg-state-active {
-  background-color: #1a1a1a !important;
-}
-
+.dark .group\/tab-pill.bg-state-active,
 .dark .sticky.top-0.z-10.bg-sidebar > .bg-surface-raised {
-  background-color: #141414 !important;
+  background-color: #1a1a1a !important;
 }

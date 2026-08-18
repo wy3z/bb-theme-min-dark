@@ -4,8 +4,9 @@ A minimal dark theme for [BB](https://getbb.app), based on the **Min Dark (Solid
 
 ## Palette
 
-- Background: `#1A1A1A`
+- Main panel: `#141414` at 90% opacity
 - Sidebar: `#141414`
+- Raised messages and code: `#242424`–`#333333`
 - Border and selection: `#2A2A2A`
 - Foreground: `#BBBBBB`
 - Muted text: `#999999`

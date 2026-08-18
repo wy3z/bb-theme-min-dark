@@ -49,8 +49,8 @@
   --primary: #79b8ff;
   --primary-foreground: #141414;
 
-  --background: #1a1a1a;
-  --card: #1a1a1a;
+  --background: rgb(20 20 20 / 90%);
+  --card: rgb(20 20 20 / 90%);
   --popover: #1a1a1a;
   --sidebar: #141414;
   --sidebar-foreground: #999999;
@@ -63,9 +63,9 @@
   --input: #3a3a3a;
   --secondary: #242424;
   --accent: #2a2a2a;
-  --muted: #242424;
-  --surface-recessed: #141414;
-  --surface-raised: #202020;
+  --muted: #333333;
+  --surface-recessed: #242424;
+  --surface-raised: #2a2a2a;
   --surface-scrim: color-mix(in srgb, #1a1a1a 92%, transparent);
   --state-hover: #2a2a2a;
   --state-active: #333333;

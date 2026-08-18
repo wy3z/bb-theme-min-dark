@@ -40,7 +40,7 @@
   --file-accent: #1976d2;
 
   --font-sans: "Inter Variable", Inter, system-ui, sans-serif;
-  --font-mono: "JetBrainsMono Nerd Font Mono", "JetBrains Mono", monospace;
+  --font-mono: "FiraCode Nerd Font", "Fira Code", monospace;
 }
 
 .dark {

@@ -12,7 +12,7 @@ A minimal dark theme for [BB](https://getbb.app), based on the **Min Dark (Solid
 - Muted text: `#999999`
 - Accent: `#79B8FF`
 
-The repository also includes a matching Pierre/VS Code code theme for diffs and file previews.
+The repository also includes a matching Pierre/VS Code code theme for diffs and file previews. The thread surface uses 90% opacity; showing the desktop wallpaper beneath it requires a BB desktop build with native transparent-window support.
 
 ## Install
 

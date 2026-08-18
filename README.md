@@ -1,0 +1,26 @@
+# Min Dark for BB
+
+A minimal dark theme for [BB](https://getbb.app), based on the **Min Dark (Solid)** theme for Zed.
+
+## Palette
+
+- Background: `#1A1A1A`
+- Sidebar: `#141414`
+- Border and selection: `#2A2A2A`
+- Foreground: `#BBBBBB`
+- Muted text: `#999999`
+- Accent: `#79B8FF`
+
+The repository also includes a matching Pierre/VS Code code theme for diffs and file previews.
+
+## Install
+
+Copy the repository into BB's custom theme directory:
+
+```bash
+mkdir -p "$(bb theme dir)/min-dark"
+cp theme.css theme.json pierre-dark.json "$(bb theme dir)/min-dark/"
+bb theme set min-dark
+```
+
+The stylesheet uses Inter for the interface and JetBrains Mono for code when those fonts are available.

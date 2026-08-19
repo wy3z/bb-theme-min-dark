@@ -1,27 +1,74 @@
 # Min Dark for BB
 
-A minimal dark theme for [BB](https://getbb.app), based on the **Min Dark (Solid)** theme for Zed.
+Two minimal dark themes for [BB](https://getbb.app), using BB's default neutral
+palette with Min-inspired terminal and code colours.
 
-## Palette
+## Variants
 
-- Main panel: solid `#141414`
-- Project sidebar: `#141414` at 90% opacity
-- Raised messages and code: `#242424`–`#333333`
-- Border and selection: `#2A2A2A`
-- Foreground: `#BBBBBB`
-- Muted text: `#999999`
-- Accent: `#79B8FF`
+- `min-dark-opaque` keeps BB's normal opaque window and sidebar surfaces.
+- `min-dark-transparent` makes the desktop window transparent and renders the
+  project sidebar at 90% opacity. Sidebar hover and selected states use 30%
+  opacity.
 
-The repository also includes a matching Pierre/VS Code code theme for diffs and file previews. The project sidebar uses 90% opacity; showing the desktop wallpaper beneath it requires a BB desktop build with native transparent-window support.
+Both variants include:
+
+- Inter Variable for interface text.
+- FiraCode Nerd Font Mono for code and other monospace text.
+- A matching Pierre/VS Code dark code theme for diffs and file previews.
+- An auto-hiding project-sidebar scrollbar that appears on hover or keyboard
+  focus.
+
+The root-level theme files mirror `min-dark-transparent` for compatibility with
+older installations of this repository.
+
+## Requirements
+
+BB bundles Inter Variable. Install `FiraCode Nerd Font Mono` locally if it is
+not already available; the theme falls back to Fira Code and then the browser's
+default monospace font.
+
+The transparent variant also requires a BB desktop build whose Electron window
+uses these non-macOS options:
+
+```js
+{
+  autoHideMenuBar: true,
+  backgroundColor: "#00000000",
+  transparent: true
+}
+```
+
+For a completely hidden native menu, the desktop build must also call:
+
+```js
+Menu.setApplicationMenu(null)
+```
+
+The opaque variant works with an unmodified BB desktop or browser client.
 
 ## Install
 
-Copy the repository into BB's custom theme directory:
+Clone the repository, then copy either variant into BB's custom theme directory:
 
 ```bash
-mkdir -p "$(bb theme dir)/min-dark"
-cp theme.css theme.json pierre-dark.json "$(bb theme dir)/min-dark/"
-bb theme set min-dark
+git clone https://github.com/wy3z/bb-theme-min-dark.git
+cd bb-theme-min-dark
+
+theme=min-dark-transparent # or min-dark-opaque
+mkdir -p "$(bb theme dir)/$theme"
+cp "$theme"/* "$(bb theme dir)/$theme/"
+bb theme set "$theme"
 ```
 
-The stylesheet uses BB's bundled Inter Variable for the interface and FiraCode Nerd Font for code when available.
+To install both variants:
+
+```bash
+for theme in min-dark-opaque min-dark-transparent; do
+  mkdir -p "$(bb theme dir)/$theme"
+  cp "$theme"/* "$(bb theme dir)/$theme/"
+done
+
+bb theme set min-dark-transparent
+```
+
+Re-run `bb theme set <name>` after editing an active theme so BB reloads it.

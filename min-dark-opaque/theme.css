@@ -1,4 +1,4 @@
-/* Based on min-dark-opaque (formerly min-dark-2); only sidebar transparency differs. */
+/* Keep BB's built-in Default palette; syntax colors are configured in theme.json. */
 :root, .light {
   --font-sans: "Inter Variable", Inter, sans-serif;
   --font-mono: "FiraCode Nerd Font Mono", "Fira Code", monospace;
@@ -38,50 +38,6 @@
   --ansi-bg-fg-13: #141414;
   --ansi-bg-fg-14: #141414;
   --ansi-bg-fg-15: #141414;
-}
-
-.dark,
-.dark body,
-.dark body #root {
-  background-color: transparent !important;
-}
-
-.dark [data-sidebar="panel"] {
-  background-color: color-mix(in srgb, var(--background) 90%, transparent) !important;
-}
-
-.dark [data-sidebar="sidebar"] {
-  background-color: transparent !important;
-}
-
-.dark [data-sidebar="sidebar"] .group\/sidebar-section > .bb-sidebar-hover-actions-row,
-.dark [data-sidebar="sidebar"] .group\/sidebar-section > .bb-sidebar-hover-actions-row::before,
-.dark [data-sidebar="sidebar"] .group\/sidebar-section > .bb-sidebar-hover-actions-row::after {
-  background-color: transparent !important;
-}
-
-.dark [data-sidebar="sidebar"] .bg-gradient-to-b.from-transparent.to-sidebar {
-  background-image: none !important;
-}
-
-.dark [data-sidebar="sidebar"] [data-sidebar="menu-button"]:is(:hover, :active, [data-active="true"]),
-.dark [data-sidebar="sidebar"] .bb-sidebar-hover-actions-row:is(:hover, :has([data-state="open"])) {
-  background-color: color-mix(in srgb, var(--sidebar-accent) 30%, transparent) !important;
-}
-
-.dark .bb-sidebar-selected-row {
-  background: linear-gradient(
-    color-mix(in srgb, var(--state-active) 30%, transparent),
-    color-mix(in srgb, var(--state-active) 30%, transparent)
-  ) !important;
-}
-
-.dark [data-sidebar="sidebar"] button[type="button"].w-full:hover {
-  background-color: color-mix(in srgb, var(--sidebar-accent) 30%, transparent) !important;
-}
-
-.dark [data-sidebar="sidebar"] button[type="button"].w-full[aria-current="page"] {
-  background-color: color-mix(in srgb, var(--state-active) 30%, transparent) !important;
 }
 
 /* Keep the project sidebar scrollbar out of view until it is in use. */

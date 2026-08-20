@@ -60,19 +60,19 @@
   background-color: transparent !important;
 }
 
-.dark [data-sidebar="sidebar"] [data-bb-plugin="t3sidebar"] .group\/card,
-.dark [data-sidebar="sidebar"] [data-bb-plugin="t3sidebar"] .group\/slim {
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="gtd-sidebar"]) .group\/card,
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="gtd-sidebar"]) .group\/slim {
   background: transparent !important;
 }
 
-.dark [data-sidebar="sidebar"] [data-bb-plugin="t3sidebar"] .group\/card:hover,
-.dark [data-sidebar="sidebar"] [data-bb-plugin="t3sidebar"] .group\/slim:hover,
-.dark [data-sidebar="sidebar"] [data-bb-plugin="t3sidebar"] .group\/card.bg-sidebar-accent\/30 {
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="gtd-sidebar"]) .group\/card:hover,
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="gtd-sidebar"]) .group\/slim:hover,
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="gtd-sidebar"]) .group\/card.bg-sidebar-accent\/30 {
   background: color-mix(in srgb, var(--sidebar-accent) 30%, transparent) !important;
 }
 
-.dark [data-sidebar="sidebar"] [data-bb-plugin="t3sidebar"] .group\/card.bg-sidebar-accent,
-.dark [data-sidebar="sidebar"] [data-bb-plugin="t3sidebar"] .group\/slim.bg-sidebar-accent {
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="gtd-sidebar"]) .group\/card.bg-sidebar-accent,
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="gtd-sidebar"]) .group\/slim.bg-sidebar-accent {
   background: linear-gradient(
     color-mix(in srgb, var(--state-active) 30%, transparent),
     color-mix(in srgb, var(--state-active) 30%, transparent)

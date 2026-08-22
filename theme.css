@@ -1,7 +1,7 @@
 /* Based on min-dark-opaque (formerly min-dark-2); only sidebar transparency differs. */
 :root, .light {
   --font-sans: "Inter Variable", Inter, sans-serif;
-  --font-mono: "FiraCode Nerd Font Mono", "Fira Code", monospace;
+  --font-mono: "Fira Code", monospace;
 }
 
 .dark {

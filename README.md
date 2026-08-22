@@ -13,7 +13,7 @@ palette with Min-inspired terminal and code colours.
 Both variants include:
 
 - Inter Variable for interface text.
-- FiraCode Nerd Font Mono for code and other monospace text.
+- Fira Code for code and other monospace text.
 - A matching Pierre/VS Code dark code theme for diffs and file previews.
 - An auto-hiding project-sidebar scrollbar that appears on hover or keyboard
   focus.
@@ -23,9 +23,9 @@ older installations of this repository.
 
 ## Requirements
 
-BB bundles Inter Variable. Install `FiraCode Nerd Font Mono` locally if it is
-not already available; the theme falls back to Fira Code and then the browser's
-default monospace font.
+BB bundles Inter Variable. Install `Fira Code` locally if it is not already
+available; otherwise, the theme falls back to the browser's default monospace
+font.
 
 The transparent variant also requires a BB desktop build whose Electron window
 uses these non-macOS options:

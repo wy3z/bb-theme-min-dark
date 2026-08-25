@@ -104,6 +104,11 @@
   background-color: color-mix(in srgb, var(--sidebar-accent) 30%, transparent) !important;
 }
 
+/* Keep the child-thread count toggle from becoming opaque on hover. */
+.dark [data-sidebar="sidebar"] [data-thread-card-fixed-trailing] > button[aria-expanded]:hover {
+  background-color: color-mix(in srgb, var(--sidebar-accent) 30%, transparent) !important;
+}
+
 .dark .bb-sidebar-selected-row {
   background: linear-gradient(
     color-mix(in srgb, var(--state-active) 30%, transparent),

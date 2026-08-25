@@ -5,6 +5,8 @@
 }
 
 .dark {
+  --canvas: #141414 !important;
+  --background: #141414 !important;
   --ansi-0: #1a1a1a;
   --ansi-1: #fa7584;
   --ansi-2: #85df7b;
@@ -38,6 +40,12 @@
   --ansi-bg-fg-13: #141414;
   --ansi-bg-fg-14: #141414;
   --ansi-bg-fg-15: #141414;
+}
+
+.dark,
+.dark body,
+.dark body #root {
+  background-color: #141414 !important;
 }
 
 /* Keep the project sidebar scrollbar out of view until it is in use. */

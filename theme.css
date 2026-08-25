@@ -5,6 +5,8 @@
 }
 
 .dark {
+  --canvas: #141414 !important;
+  --background: #141414 !important;
   --ansi-0: #1a1a1a;
   --ansi-1: #fa7584;
   --ansi-2: #85df7b;
@@ -104,6 +106,15 @@
 }
 
 .dark [data-sidebar="sidebar"] button[type="button"].w-full[aria-current="page"] {
+  background-color: color-mix(in srgb, var(--state-active) 30%, transparent) !important;
+}
+
+/* Settings panel navigation links (rendered as <a>, not buttons). */
+.dark [data-sidebar="sidebar"] a.w-full:hover {
+  background-color: color-mix(in srgb, var(--sidebar-accent) 30%, transparent) !important;
+}
+
+.dark [data-sidebar="sidebar"] a.w-full[aria-current="page"] {
   background-color: color-mix(in srgb, var(--state-active) 30%, transparent) !important;
 }
 

@@ -56,28 +56,38 @@
   background-color: transparent !important;
 }
 
+/* Match BB Sidebar's thread-status tones to the Min Dark shell palette. */
+.dark [data-bb-plugin="bb-sidebar"] {
+  --color-red-300: var(--ansi-9);
+  --color-indigo-300: var(--ansi-13);
+  --color-emerald-300: var(--ansi-10);
+  --color-sky-400: var(--ansi-12);
+  --color-amber-300: var(--ansi-11);
+  --color-violet-300: var(--ansi-13);
+}
+
 .dark [data-sidebar="sidebar"] .group\/sidebar-section > .bb-sidebar-hover-actions-row,
 .dark [data-sidebar="sidebar"] .group\/sidebar-section > .bb-sidebar-hover-actions-row::before,
 .dark [data-sidebar="sidebar"] .group\/sidebar-section > .bb-sidebar-hover-actions-row::after {
   background-color: transparent !important;
 }
 
-.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"]) .group\/card,
-.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"]) .group\/slim,
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"], [data-bb-plugin="bb-sidebar"]) .group\/card,
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"], [data-bb-plugin="bb-sidebar"]) .group\/slim,
 .dark [data-sidebar="sidebar"] [data-bb-plugin="t3sidebar-nested"] ul[aria-label^="Child threads of "] > li > div {
   background: transparent !important;
 }
 
-.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"]) .group\/card:hover,
-.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"]) .group\/slim:hover,
-.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"]) .group\/card.bg-sidebar-accent\/30,
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"], [data-bb-plugin="bb-sidebar"]) .group\/card:hover,
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"], [data-bb-plugin="bb-sidebar"]) .group\/slim:hover,
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"], [data-bb-plugin="bb-sidebar"]) .group\/card.bg-sidebar-accent\/30,
 .dark [data-sidebar="sidebar"] [data-bb-plugin="t3sidebar-nested"] ul[aria-label^="Child threads of "] > li > div:hover,
 .dark [data-sidebar="sidebar"] [data-bb-plugin="t3sidebar-nested"] ul[aria-label^="Child threads of "] > li > div.bg-sidebar-accent\/30 {
   background: color-mix(in srgb, var(--sidebar-accent) 30%, transparent) !important;
 }
 
-.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"]) .group\/card.bg-sidebar-accent,
-.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"]) .group\/slim.bg-sidebar-accent,
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"], [data-bb-plugin="bb-sidebar"]) .group\/card.bg-sidebar-accent,
+.dark [data-sidebar="sidebar"] :is([data-bb-plugin="t3sidebar"], [data-bb-plugin="t3sidebar-nested"], [data-bb-plugin="gtd-sidebar"], [data-bb-plugin="bb-sidebar"]) .group\/slim.bg-sidebar-accent,
 .dark [data-sidebar="sidebar"] [data-bb-plugin="t3sidebar-nested"] ul[aria-label^="Child threads of "] > li > div.bg-sidebar-accent {
   background: linear-gradient(
     color-mix(in srgb, var(--state-active) 30%, transparent),

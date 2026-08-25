@@ -48,6 +48,16 @@
   background-color: #141414 !important;
 }
 
+/* Match BB Sidebar's thread-status tones to the Min Dark shell palette. */
+.dark [data-bb-plugin="bb-sidebar"] {
+  --color-red-300: var(--ansi-9);
+  --color-indigo-300: var(--ansi-13);
+  --color-emerald-300: var(--ansi-10);
+  --color-sky-400: var(--ansi-12);
+  --color-amber-300: var(--ansi-11);
+  --color-violet-300: var(--ansi-13);
+}
+
 /* Keep the project sidebar scrollbar out of view until it is in use. */
 [data-sidebar="content"] {
   scrollbar-color: transparent transparent;

@@ -7,6 +7,8 @@
 .dark {
   --canvas: #141414 !important;
   --background: #141414 !important;
+  /* Keep BB's bg-sidebar utility transparent wherever it is applied. */
+  --sidebar: transparent !important;
   --ansi-0: #1a1a1a;
   --ansi-1: #fa7584;
   --ansi-2: #85df7b;
@@ -52,7 +54,9 @@
   background-color: color-mix(in srgb, var(--background) 90%, transparent) !important;
 }
 
-.dark [data-sidebar="sidebar"] {
+/* BB 0.41 adds bg-sidebar directly to the scrollable content container. */
+.dark [data-sidebar="sidebar"],
+.dark [data-sidebar="content"] {
   background-color: transparent !important;
 }
 
